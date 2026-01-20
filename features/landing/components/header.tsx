@@ -22,7 +22,9 @@ export function Header() {
               </Link>
             ))}
 
-            <Button variant="primary">Get Started</Button>
+            <Link href="/auth">
+              <Button variant="primary">Get Started</Button>
+            </Link>
           </div>
         </div>
       </nav>

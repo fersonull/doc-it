@@ -57,7 +57,7 @@ export function Sidebar() {
   ];
 
   return (
-    <div className="w-60 bg-white/50 backdrop-blur-sm border-r border-orange-100/50 p-6 space-y-6">
+    <div className="w-60 bg-white/50 backdrop-blur-sm border-r border-orange-100/50 p-6 space-y-6 font-sans overflow-hidden">
       {sections.map((section) => (
         <NavSection key={section.title} {...section} />
       ))}

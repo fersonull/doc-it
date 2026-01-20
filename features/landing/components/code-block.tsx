@@ -11,7 +11,7 @@ export function CodeBlock() {
         <div className="pl-4 text-gray-300">headers: {`{`}</div>
         <div className="pl-8">
           <span className="text-orange-300">'Authorization'</span>
-          <span className="text-gray-300">:</span>{' '}
+          <span className="text-gray-300">:</span>{" "}
           <span className="text-green-400">'Bearer YOUR_TOKEN'</span>
         </div>
         <div className="pl-4 text-gray-300">{`}`}</div>

@@ -7,7 +7,7 @@ import { AuthBenefits } from "./components/auth-benefits";
 
 export function AuthPage() {
   return (
-    <div className="min-h-screen flex items-center bg-white relative overflow-hidden">
+    <div className="min-h-screen flex items-center bg-white relative overflow-hidden font-sans">
       <BackgroundGradients />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">

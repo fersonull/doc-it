@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { Link } from '@/components/ui/link';
-import { siteConfig } from '@/config/site';
+import { Button } from "@/components/ui/button";
+import { Link } from "@/components/ui/link";
+import { siteConfig } from "@/config/site";
 
 export function Header() {
   return (
@@ -14,21 +14,15 @@ export function Header() {
               {siteConfig.name}
             </span>
           </div>
-          
+
           <div className="flex items-center gap-10">
             {siteConfig.navigation.map((item) => (
               <Link key={item.href} href={item.href} variant="nav">
                 {item.label}
               </Link>
             ))}
-            
-            <Button variant="ghost">
-              Log In
-            </Button>
-            
-            <Button variant="primary">
-              Get Started
-            </Button>
+
+            <Button variant="primary">Get Started</Button>
           </div>
         </div>
       </nav>

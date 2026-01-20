@@ -1,7 +1,8 @@
-import { Button } from '@/components/ui/button';
-import { Icon } from '@/components/ui/icon';
-import { siteConfig } from '@/config/site';
-import { BrowserMockup } from './browser-mockup';
+import { Button } from "@/components/ui/button";
+import { Icon } from "@/components/ui/icon";
+import { siteConfig } from "@/config/site";
+import { BrowserMockup } from "./browser-mockup";
+import { Link } from "@/components/ui";
 
 export function Hero() {
   return (
@@ -15,11 +16,13 @@ export function Hero() {
             {siteConfig.description}
           </p>
           <div className="flex items-center justify-center gap-4">
-            <Button className="px-8 py-4 hover:scale-105 hover:shadow-xl hover:shadow-orange-500/30">
-              Start Writing for Free
-            </Button>
-            <a 
-              href="#demo" 
+            <Link href="/auth">
+              <Button className="px-8 py-4 hover:scale-105 hover:shadow-xl hover:shadow-orange-500/30">
+                Start Writing for Free
+              </Button>
+            </Link>
+            <a
+              href="#demo"
               className="px-8 py-4 text-base font-medium text-gray-900 hover:text-orange-600 transition-colors flex items-center gap-2"
             >
               View Demo

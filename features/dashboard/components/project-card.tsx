@@ -1,6 +1,7 @@
 "use client";
 
 import { Icon } from "@/components/ui/icon";
+import Link from "next/link";
 
 interface ProjectCardProps {
   id: string;
@@ -20,7 +21,10 @@ export function ProjectCard({
   pageCount,
 }: ProjectCardProps) {
   return (
-    <div className="group bg-white border border-gray-200 rounded-sm p-6 hover:border-orange-300 transition-all cursor-pointer">
+    <Link
+      href={`/editor/${id}`}
+      className="group bg-white border border-gray-200 rounded-sm p-6 hover:border-orange-300 transition-all cursor-pointer"
+    >
       <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
@@ -71,6 +75,6 @@ export function ProjectCard({
         </div>
         <span className="text-xs">Edited {lastEdited}</span>
       </div>
-    </div>
+    </Link>
   );
 }

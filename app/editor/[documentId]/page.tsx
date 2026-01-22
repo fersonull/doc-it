@@ -1,13 +1,13 @@
 import { EditorPage } from "@/features/editor";
 
 interface EditorProps {
-  params: Promise<{ projectId: string }>;
+  params: Promise<{ documentId: string }>;
 }
 
 export default async function Editor({ params }: EditorProps) {
-  const { projectId } = await params;
+  const { documentId } = await params;
 
-  console.log(projectId);
+  console.log(documentId);
 
   return <EditorPage />;
 }
